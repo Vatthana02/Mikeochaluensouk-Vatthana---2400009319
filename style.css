@@ -1,0 +1,557 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+    line-height:1.6;
+}
+
+/* Navbar */
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background:#111827;
+    z-index:1000;
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.logo{
+    color:#38bdf8;
+    font-size:30px;
+}
+
+.menu{
+    display:flex;
+    list-style:none;
+}
+
+.menu li{
+    margin-left:30px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:white;
+    font-size:28px;      /* ปรับขนาด */
+    font-weight:700;     /* ตัวหนา */
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:#38bdf8;
+}
+
+.menu-btn{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+}
+
+/* Hero */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1200px;
+    margin:auto;
+    padding:120px 20px 50px;
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h1{
+    font-size:55px;
+    margin-bottom:20px;
+    color:#38bdf8;   /* สีฟ้าเหมือนหัวข้ออื่น */
+    font-weight:700;
+}
+
+.hero-text p{
+    font-size:18px;
+    color:#dae9f0;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#38bdf8;
+    color:rgb(8, 1, 1);
+    text-decoration:none;
+    padding:12px 30px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0284c7;
+    transform:translateY(-3px);
+}
+
+.hero-image{
+    width:40%;
+    text-align:center;
+}
+
+.hero-image img{
+    width:350px;
+    border-radius:50%;
+    box-shadow:0 0 25px rgba(56,189,248,.5);
+}
+
+/* Sections */
+
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:38px;
+    color:#38bdf8;
+}
+
+/* Cards */
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:#334155;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+/* Footer */
+
+footer{
+    background:#111827;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+}
+.travel{
+    width:80%;
+    margin:40px auto;
+}
+
+.travel h1{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:40px;
+}
+
+.item{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    margin-bottom:35px;
+}
+
+.item img{
+    width:130px;
+    height:90px;
+    object-fit:cover;
+    border-radius:5px;
+}
+
+.text{
+    flex:1;
+}
+
+.text h2{
+    margin-bottom:10px;
+    font-size:30px;
+    color:#38BDF8;      /* ชื่อสถานที่และอาหาร สีขาว */
+    font-weight:700;
+}
+
+.text p{
+    font-size:22px;
+    line-height:1.6;
+    color:#e5e7eb;      /* รายละเอียด สีเทาอ่อน */
+}
+/* PROJECT */
+
+.project-box{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.project{
+    width:260px;
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    transition:.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.project:hover{
+    transform:translateY(-8px);
+    background:#334155;
+}
+
+.project h3{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.project p{
+    color:#e5e7eb;
+    font-size:15px;
+}
+
+/* SKILLS */
+
+.skill-box{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.skill{
+    width:220px;
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    transition:.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.skill:hover{
+    transform:translateY(-8px);
+    background:#334155;
+}
+
+.skill h3{
+    color:#38bdf8;
+    margin-bottom:12px;
+}
+
+.skill p{
+    color:#e5e7eb;
+}
+/* CONTACT */
+
+.contact{
+    max-width:1200px;
+    margin:auto;
+    padding:100px 20px 50px;
+}
+
+
+.contact-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+
+.contact-title h1{
+    font-size:42px;
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+
+.contact-title p{
+    color:#e5e7eb;
+    font-size:18px;
+}
+
+
+
+.contact-box{
+
+    display:flex;
+    gap:40px;
+    align-items:stretch;
+
+}
+
+
+
+.contact-form,
+.contact-info{
+
+    flex:1;
+    background:#1e293b;
+    padding:35px;
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+
+    transition:.3s;
+
+}
+
+
+.contact-form:hover,
+.contact-info:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+.contact-form h2,
+.contact-info h2{
+
+    color:#38bdf8;
+    margin-bottom:25px;
+    font-size:25px;
+
+}
+
+
+
+input,
+textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#334155;
+
+    color:white;
+
+    font-size:16px;
+
+}
+
+
+input:focus,
+textarea:focus{
+
+    outline:2px solid #38bdf8;
+
+}
+
+
+
+textarea{
+
+    height:150px;
+    resize:none;
+
+}
+
+
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#38bdf8;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+button:hover{
+
+    background:#0284c7;
+
+}
+
+
+
+.info{
+
+    margin-bottom:25px;
+
+}
+
+
+
+.info h3{
+
+    color:#38bdf8;
+
+    margin-bottom:5px;
+
+}
+
+
+
+.info p{
+
+    color:#e5e7eb;
+
+}
+
+
+
+.social{
+
+    text-align:center;
+
+    margin-top:50px;
+
+}
+
+
+
+.social img{
+
+    width:45px;
+
+    margin:0 12px;
+
+    transition:.3s;
+
+}
+
+
+
+.social img:hover{
+
+    transform:scale(1.2);
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .contact-box{
+
+        flex-direction:column;
+
+    }
+
+
+    .contact-form,
+    .contact-info{
+
+        width:100%;
+
+    }
+
+
+    .contact-title h1{
+
+        font-size:32px;
+
+    }
+
+}
+footer{
+    background:#111827;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+}
+
+
+.social i{
+
+    font-size:35px;
+    margin:0 15px;
+    color:#38bdf8;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+
+.social i:hover{
+
+    color:#0284c7;
+    transform:translateY(-5px);
+
+}
+.hero-text h1{
+    margin-bottom:20px;
+}
+
+.about h2{
+    margin-bottom:20px;
+}
+.menu a{
+    text-decoration:none;
+    color:white;
+    font-size:30px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:#38bdf8;
+}
+
+/* หน้าปัจจุบัน */
+.menu a.active{
+    color:red;
+}

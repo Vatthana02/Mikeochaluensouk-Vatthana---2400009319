@@ -1,0 +1,32 @@
+@media(max-width:768px){
+
+.menu{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.menu li{
+    margin:0;
+}
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text,
+.hero-image{
+    width:100%;
+}
+
+.hero-image img{
+    width:250px;
+}
+
+.card-container{
+    grid-template-columns:1fr;
+}
+
+}
